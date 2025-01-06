@@ -1,6 +1,5 @@
-import kagglehub
+import pandas as pd
 
-# Download latest version
-path = kagglehub.dataset_download("asaniczka/video-game-sales-2024")
+videogameSet = pd.read_csv('vgchartz-2024.csv')
 
-print("Path to dataset files:", path)
+videogameSet.info()
